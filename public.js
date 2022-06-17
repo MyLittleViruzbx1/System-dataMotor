@@ -1,1 +1,1 @@
-var scope = {};
+var global = {};

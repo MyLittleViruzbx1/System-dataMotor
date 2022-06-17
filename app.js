@@ -9,6 +9,7 @@
  */
 
 import { modCliente }  from './modelos.js';
+import './modelos.js'
 import {dataMotor} from './dataMotor.js';
 //import { dataMotor } from './dataMotor.js'; //importa el motor de almacenamiento
 // Base    ----> identificador de la app
@@ -16,5 +17,9 @@ import {dataMotor} from './dataMotor.js';
 //       registros  ---> campos de informacion
 
 const motor = new dataMotor({base:'chk', driver:'dbLocal'});
+global.motor = motor;
 // console.log(motor);
+
+motor.autoContenedor = false;
+
 console.log( motor.contenedores );
