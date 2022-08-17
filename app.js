@@ -8,9 +8,10 @@
  *      - Cobrado
  */
 
-import { modCliente }  from './modelos.js';
-import './modelos.js'
+// import { modCliente }  from './modelos.js';
+// import './modelos.js'
 import {dataMotor} from './dataMotor.js';
+import {cargarVista} from './vista.js';
 //import { dataMotor } from './dataMotor.js'; //importa el motor de almacenamiento
 // Base    ----> identificador de la app
 //   contenedores  ----> equivalente a tabla y almacen, agrupa registros del  mismo tipo
@@ -22,4 +23,5 @@ global.motor = motor;
 
 motor.autoContenedor = false;
 
-console.log( motor.contenedores );
+// console.log( 'inicio', "#cuerpo");
+cargarVista('inicio', '#cuerpo')
